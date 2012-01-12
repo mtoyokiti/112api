@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  
+  
+  <!-- Servlets -->
+  <servlet>
+  	<servlet-name>CalcCounter</servlet-name>
+  	<servlet-class>org.iine.servlet.CalcCounter</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>RegS</servlet-name>
+  	<servlet-class>org.iine.servlet.RegS</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>top</servlet-name>
+    <servlet-class>org.iine.servlet.TopS</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>SaveUrlS</servlet-name>
+    <servlet-class>org.iine.servlet.SaveUrlS</servlet-class>
+  </servlet>  
+
+  <servlet>
+    <servlet-name>CounterUpS</servlet-name>
+    <servlet-class>org.iine.servlet.CounterUpS</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+  	<servlet-name>twSignin</servlet-name>
+  	<servlet-class>org.iine.servlet.twitter.TwSigninServlet</servlet-class>
+  </servlet>
+  
+  	<servlet>
+		<servlet-name>TwCallbackServlet</servlet-name>
+		<servlet-class>org.iine.servlet.twitter.TwCallbackServlet</servlet-class>
+	</servlet>  
+	
+	
+	<servlet>
+		<servlet-name>DelUrlS</servlet-name>
+		<servlet-class>org.iine.servlet.DelUrlS</servlet-class>
+	</servlet>  
+	
+	
+	<servlet>
+		<servlet-name>UserUrlListS</servlet-name>
+		<servlet-class>org.iine.servlet.UserUrlListS</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>regTitle</servlet-name>
+		<servlet-class>org.iine.servlet.RegTitleS</servlet-class>
+	</servlet>
+
+<!-- servlet-mapping ___________________________________________________ -->  
+  
+
+  <servlet-mapping>
+  	<servlet-name>regTitle</servlet-name>
+  	<url-pattern>/regTitle</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>RegS</servlet-name>
+  	<url-pattern>/reg</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+    <servlet-name>top</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>SaveUrlS</servlet-name>
+  	<url-pattern>/saveurl</url-pattern>
+  </servlet-mapping>  
+
+
+
+  <servlet-mapping>
+    <servlet-name>CounterUpS</servlet-name>
+    <url-pattern>/u</url-pattern>
+  </servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>CalcCounter</servlet-name>
+		<url-pattern>/CalcCounter</url-pattern>
+	</servlet-mapping>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>TwCallbackServlet</servlet-name>
+  	<url-pattern>/twcb</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet-mapping>
+  	<servlet-name>twSignin</servlet-name>
+  	<url-pattern>/tw</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>DelUrlS</servlet-name>
+  	<url-pattern>/delurl</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>UserUrlListS</servlet-name>
+  	<url-pattern>/UserUrlList</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- Default page to serve -->
+
+</web-app>

@@ -1,0 +1,96 @@
+ようこそ、復興いいね！APIへ！
+
+”復興いいね！APIについて”
+本プロジェクトはHack For Japanコミュニティのプロジェクトの一つで、
+2011年3月11日に発生した東日本大震災からの復興を支援する為に発起した
+ものです。
+
+下記サイトで使用しています。
+http://www.112api.jp/
+
+ライセンスはクリエイティブコモンズです。
+http://creativecommons.org/licenses/by-nc-sa/2.1/jp/
+
+ただし、本プロジェクトの趣旨にそわない目的に利用／再利用する事は禁止します。
+
+また、利用する際には必ず以下のクレジットを明記してください。
+Created for recover Big Eathquake in Japan.
+http://www.112api.jp/
+
+リポジトリ構成
+・src--Javaソースコードを格納しています。
+・war--実行時に必要となるweb.xmlおよびhtml、css他を格納しています。
+　|--css--使用StyleSheetファイル各種
+　|--img--使用画像ファイル各種
+　|--js--使用JavaScriptファイル各種
+　|--WEB-INF
+　　　　　|--appengine-web.xml--GAE設定用xmlファイル
+　　　　　|--web.xml--ServletとURLの対応付けファイル
+
+開発言語
+・Java
+・HTML
+・CSS
+・Javascript
+
+・プラットフォーム
+JavaをベースにしているのでOSには依存しませんが、現在の所以下の環境でのテスト動作を確認しています。
+・Windows7 Professional(64bit)
+・Mac OS X Snow Lepard
+
+開発、テストには以下のモジュールを使用しています。
+・JDK1.6（http://www.oracle.com/technetwork/java/javase/overview/index.html）
+・Google App Engine 1.6.1（http://code.google.com/intl/ja/appengine/）
+・Gogle Web ToolKit 2.4.0（http://code.google.com/intl/ja/webtoolkit/）
+・Twitter4j 2.2.5（http://twitter4j.org/ja/index.html）
+※2011年12月時点ではJDK1.7とGAE1.6.1、GWT2.4の組み合わせを使用すると実行時に内部矛盾例外（java.lang.VerifyError）が発生します。
+　GAE、GWTともにJDKの最新バージョンに対応が完了していないようです。ご注意ください。
+
+また、コンパイル、テストには以下のソフトウェアがあると便利です。
+・Eclipse Indigo（Eclipse 3.7）（http://eclipse.org/）
+・Pleades Eclipse日本語化モジュール（http://mergedoc.sourceforge.jp/）
+
+テスト動作時の注意
+・Javaソースコードおよび他の静的ファイルに変更を行った後、GWTのコンパイル操作をしないと変更が反映されない場合があります。
+　なんらかの修正を加えた後に確認する際は、一度GWT Compilseを行った後に動作させた方がいいでしょう。
+・ローカル実行時はローカルに保存されているデータストアを参照するので、トップページを表示しても1件も表示されません。
+　一度復興イイネの対象サイト登録を行って初めて表示されるようになります。
+・起動時引数でstartupURLを指定していないので、ローカル実行時のアドレスはhttp://localhost:<PORTNO>/になります。
+・ファイアーウォールの除外設定を行わないと当然のごとく動作しない（正確にはアクセスできない）ので、ご注意ください。
+
+
+開発環境構築手順
+1.JDK1.6をダウンロード、インストールして環境変数の設定を行う
+2.Eclipse Indigo（Eclipse 3.7）をダウンロードしてインストールする
+3.Pleadesをダウンロードしてインストールする
+4.Eclipse用各プラグインをダウンロード、インストールする
+　（これはEclipseの操作で行った方が楽です）
+5.Githubのリポジトリよりsrc及びwar配下をpullする
+
+
+2011年10月2日
+復興いいね！APIプロジェクトメンバー一同
+mailto:mtoyokiti@112api.jp
+
+Welcome, I hope the reconstruction! To API!
+
+"I hope the reconstruction! About API"
+This project is one of the project community Hack For Japan,
+Suggestion to help you recover from the earthquake that occurred on East 11th March 2011
+Is.
+
+The following sites are used.
+http://www.112api.jp/
+
+The license is Creative Commons.
+http://creativecommons.org/licenses/by-nc-sa/2.1/jp/
+
+However, you can re-use / purposes does not meet the intent of this project is prohibited.
+
+In addition, when indicated, please use the following credit always.
+Created for recover Big Eathquake in Japan.
+http://www.112api.jp/
+
+October 02, 2011
+I hope the reconstruction! API project brought together members
+mailto: mtoyokiti@112api.jp

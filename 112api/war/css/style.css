@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/* -----------------------------------------------------------
+CSS Information
+
+ File name:      style.css
+ Author:         Your Name (admin)
+ Style Info:     いろいろ。
+----------------------------------------------------------- */
+
+/*----------------------------------------------------
+	汎用class
+----------------------------------------------------*/
+
+.imgR {
+	float: right;
+	margin: 0 0 10px 10px;
+}
+
+.imgL {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.btn {
+	text-align: center;
+}
+
+/*clearFix*/
+#contents:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}
+
+
+/*----------------------------------------------------
+	#navSkip (Navigation Skip)
+----------------------------------------------------*/
+
+span#navSkip {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+/*----------------------------------------------------
+	#page
+----------------------------------------------------*/
+
+#page {
+	text-align: left;
+}
+
+#page .area {
+	width: 860px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+/*----------------------------------------------------
+	#header
+----------------------------------------------------*/
+
+#header {
+	background: white  repeat-x;
+	color: black;
+	border-bottom: 10px solid #549804;
+	margin:0px;
+}
+
+#header a {
+	color: #99F;
+}
+
+/*----------------------------------------------------
+	#contents
+----------------------------------------------------*/
+
+#contents {
+}
+
+#contents .area {
+	background: white;
+}
+
+#contents .pageTop {
+	clear: both;
+	margin: 0;
+	text-align: right;
+}
+
+
+/*----------------------------------------------------
+	#main
+----------------------------------------------------*/
+
+#main {
+	float: left;
+	width: 860px;
+}
+
+#main h2 {
+	letter-spacing: .2em;
+	font-weight: normal;
+	font-size: 1.4em;
+	margin-bottom: 10px;
+	border-bottom: 3px double #999;
+}
+
+#main p {
+	margin: 0;
+	color: white;
+	padding: 10px;
+	letter-spacing: .1em;
+}
+
+#main p.lead {
+	margin-top: -10px;
+	color: #333;
+}
+
+#main p.memo {
+	color: #900;
+	font-size: 85%;
+	border-bottom: 1px solid #999;
+}
+
+#main pre {
+	margin-bottom: 30px;
+	padding: 10px;
+	font-size: small;
+	background: white;
+	border: 1px solid #999;
+	border-top: 0;
+}
+
+
+
+.cf {
+	border-bottom: 1px solid #999;
+
+}
+
+
+/*----------------------------------------------------
+	#sub
+----------------------------------------------------*/
+
+#sub {
+	float: right;
+	width: 300px;
+}
+
+
+/*----------------------------------------------------
+	#footer
+----------------------------------------------------*/
+
+#footer {
+	background: url(../img/share/bg_footer.gif) repeat-x;
+	color: #FFF;
+	border-bottom: 1px solid #FFF;
+}
+
+#footer a {
+	color: #CCF;
+}
+
+#footer p.copy {
+	margin: 0;
+	text-align: center;
+}

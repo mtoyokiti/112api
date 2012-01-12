@@ -1,0 +1,320 @@
+@charset "utf-8";
+
+/* -----------------------------------------------------------
+CSS Information
+
+ File name:      tag.css
+ Author:         hira (admin)
+ Style Info:     タグクラウドのスタイル色々
+----------------------------------------------------------- */
+
+/*
+	01 CSS HappyLifeで使ってるスタイル
+----------------------------------------------------------- */
+.tagSearch01 {
+	overflow: hidden;
+	margin: 10px auto 30px;
+	padding: 20px 10px 10px 30px;
+	text-align: center;
+	line-height: 1;
+	background: url(../img/tag/bg_01.gif) repeat-y center center;
+}
+.tagSearch01 li {
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	letter-spacing: -1px;
+	font-family: "Times New Roman",Serif;
+}
+.tagSearch01 li a {
+	position: relative;
+	top: 0px;
+	left: -10px;
+	z-index: 10;
+	margin: 0;
+	padding: 0 5px;
+	border: 1px dotted #999;
+	color: #000;
+	font-size: 1em;
+	text-decoration: none;
+}
+#contents .tagSearch01 li a:hover {
+	border: 1px solid #F99;
+	text-decoration: none;
+	background: white;
+	position: relative;
+	z-index: 50;
+	color: #000;
+}
+.tagSearch01 li.tagRank1 {
+	line-height: 1.3em;
+}
+.tagSearch01 li.tagRank1 a {
+	top: -5px;
+	z-index: 1;
+	font-size: 2.8em;
+}
+.tagSearch01 li.tagRank2 a {
+	top: -4px;
+	z-index: 2;
+	font-size: 2.6em;
+	color: #222;
+}
+.tagSearch01 li.tagRank3 a {
+	top: 4px;
+	z-index: 3;
+	font-size: 2.4em;
+	color: #333;
+}
+.tagSearch01 li.tagRank4 a {
+	top: -6px;
+	z-index: 4;
+	font-size: 2.2em;
+	color: #444;
+}
+.tagSearch01 li.tagRank5 a {
+	top: 8px;
+	z-index: 5;
+	font-size: 2em;
+	color: #555;
+}
+.tagSearch01 li.tagRank6 a {
+	top: -5px;
+	z-index: 6;
+	font-size: 1.8em;
+	color: #666;
+}
+.tagSearch01 li.tagRank7 a {
+	top: 6px;
+	z-index: 7;
+	font-size: 1.6em;
+	color: #777;
+}
+.tagSearch01 li.tagRank8 a {
+	top: -4px;
+	z-index: 8;
+	font-size: 1.4em;
+	color: #888;
+}
+.tagSearch01 li.tagRank9 a {
+	top: 8px;
+	z-index: 9;
+	font-size: 1.2em;
+	color: #999;
+}
+.tagSearch01 li.tagRank10 a {
+	top: 0;
+	z-index: 10;
+	font-size: 1em;
+	color: #AAA;
+}
+/*
+	タグをより散らす為の指定
+*/
+.tagSearch01 li.tagRank3 + li a,
+.tagSearch01 li.tagRank2 + li a,
+.tagSearch01 li.tagRank1 + li a {
+	left: -25px;
+	top: -5px;
+}
+.tagSearch01 li.tagRank7 + li.tagRank7 a {
+	top: -3px;
+}
+.tagSearch01 li.tagRank10 + li a {
+	top: 3px;
+}
+.tagSearch01 li.tagRank10 + li + li a {
+	top: -3px;
+}
+.tagSearch01 li.tagRank10 + li + li + li a {
+	top: 5px;
+}
+
+.tagSearch01 li + li + li + li + li a {
+	top: -2px;
+}
+
+/*
+	02 first-letterを使ってやってみる。
+----------------------------------------------------------- */
+.tagSearch02 {
+	overflow: hidden;
+	margin: 20px auto 30px;
+	padding: 15px;
+	line-height: 1.6em;
+}
+.tagSearch02 li {
+	float: left;
+	list-style-type: none;
+	margin: -10px 0 0 0;
+	font-family: "Courier New";
+}
+* html .tagSearch02 li {
+	margin-top: -16px;
+}
+.tagSearch02 li a:first-letter {
+	font-weight: bold;
+	padding-right: 1px;
+	color: #00F;
+	text-transform: uppercase;
+}
+.tagSearch02 li.tagRank1 a:first-letter {
+	font-size: 3.2em;
+}
+.tagSearch02 li.tagRank2 a:first-letter {
+	font-size: 3em;
+}
+.tagSearch02 li.tagRank3 a:first-letter {
+	font-size: 2.8em;
+}
+.tagSearch02 li.tagRank4 a:first-letter {
+	font-size: 2.6em;
+}
+.tagSearch02 li.tagRank5 a:first-letter {
+	font-size: 2.4em;
+}
+.tagSearch02 li.tagRank6 a:first-letter {
+	font-size: 2.2em;
+}
+.tagSearch02 li.tagRank7 a:first-letter {
+	font-size: 2em;
+}
+.tagSearch02 li.tagRank8 a:first-letter {
+	font-size: 1.8em;
+}
+.tagSearch02 li.tagRank9 a:first-letter {
+	font-size: 1.6em;
+}
+.tagSearch02 li.tagRank10 a:first-letter {
+	font-size: 1.4em;
+}
+.tagSearch02 li a {
+	float: left;
+	position: relative;
+	height: 2.4em;
+	padding: 5px 5px 0;
+	color: #000;
+	text-decoration: none;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	background: #FFF;
+}
+.tagSearch02 li.tagRank1 a {
+	color: #000;
+}
+.tagSearch02 li.tagRank2 a {
+	color: #111;
+}
+.tagSearch02 li.tagRank3 a {
+	color: #222;
+}
+.tagSearch02 li.tagRank4 a {
+	color: #333;
+}
+.tagSearch02 li.tagRank5 a {
+	color: #444;
+}
+.tagSearch02 li.tagRank6 a {
+	color: #555;
+}
+.tagSearch02 li.tagRank7 a {
+	color: #666;
+}
+.tagSearch02 li.tagRank8 a {
+	color: #777;
+}
+.tagSearch02 li.tagRank9 a {
+	color: #888;
+}
+.tagSearch02 li.tagRank10 a {
+	color: #999;
+}
+#contents .tagSearch02 li a:hover {
+	background: #EFEFEF;
+	position: relative;
+	z-index: 50;
+	top: -3px;
+	color: #000;
+	border-color: #33F;
+}
+
+
+/*
+	03 揃ってる感じにしてみる
+----------------------------------------------------------- */
+.tagSearch03 {
+	overflow: hidden;
+	margin: 10px auto 30px;
+	padding: 20px;
+	line-height: 1.6em;
+}
+.tagSearch03 li {
+	float: left;
+	min-width: 100px;
+	height: 3em;
+	list-style-type: none;
+	margin: 0;
+	padding: 0 0 0 10px;
+	letter-spacing: -1px;
+	font-family: Georgia,"Times New Roman",Serif;
+	border-left: 5px solid #CCC;
+}
+.tagSearch03 li a {
+	position: relative;
+	top: 0px;
+	left: -10px;
+	z-index: 10;
+	margin: 0;
+	padding: 0 5px;
+	color: #000;
+	font-size: 1em;
+	text-decoration: none;
+}
+#contents .tagSearch03 li a:hover {
+	text-decoration: underline;
+	position: relative;
+	z-index: 50;
+	color: #F00;
+}
+.tagSearch03 li.tagRank1 {
+}
+.tagSearch03 li.tagRank1 a {
+	font-size: 2.8em;
+}
+.tagSearch03 li.tagRank2 a {
+	font-size: 2.6em;
+	color: #222;
+}
+.tagSearch03 li.tagRank3 a {
+	font-size: 2.4em;
+	color: #333;
+}
+.tagSearch03 li.tagRank4 a {
+	font-size: 2.2em;
+	color: #444;
+}
+.tagSearch03 li.tagRank5 a {
+	font-size: 2em;
+	color: #555;
+}
+.tagSearch03 li.tagRank6 a {
+	font-size: 1.8em;
+	color: #666;
+}
+.tagSearch03 li.tagRank7 a {
+	font-size: 1.6em;
+	color: #777;
+}
+.tagSearch03 li.tagRank8 a {
+	font-size: 1.4em;
+	color: #888;
+}
+.tagSearch03 li.tagRank9 a {
+	font-size: 1.2em;
+	color: #999;
+}
+.tagSearch03 li.tagRank10 a {
+	font-size: 1em;
+	color: #AAA;
+}
