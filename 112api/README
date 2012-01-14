@@ -27,11 +27,14 @@ http://www.112api.jp/
 　　　　　|--appengine-web.xml--GAE設定用xmlファイル
 　　　　　|--web.xml--ServletとURLの対応付けファイル
 
-開発言語
+開発言語／構成要素
 ・Java
 ・HTML
 ・CSS
 ・Javascript
+・Google App Engine
+・Google Web ToolKit
+
 
 ・プラットフォーム
 JavaをベースにしているのでOSには依存しませんが、現在の所以下の環境でのテスト動作を確認しています。
@@ -46,9 +49,11 @@ JavaをベースにしているのでOSには依存しませんが、現在の�
 ※2011年12月時点ではJDK1.7とGAE1.6.1、GWT2.4の組み合わせを使用すると実行時に内部矛盾例外（java.lang.VerifyError）が発生します。
 　GAE、GWTともにJDKの最新バージョンに対応が完了していないようです。ご注意ください。
 
-また、コンパイル、テストには以下のソフトウェアがあると便利です。
+また、コンパイル、テスト、ソースコードの取得には以下のソフトウェアがあると便利です。
 ・Eclipse Indigo（Eclipse 3.7）（http://eclipse.org/）
 ・Pleades Eclipse日本語化モジュール（http://mergedoc.sourceforge.jp/）
+・Egit Eclipse用gitプラグイン（http://eclipse.org/egit/）
+※Windowsでgitを使用すつ為にはCygwinが必要になります（http://www.cygwin.com/）
 
 テスト動作時の注意
 ・Javaソースコードおよび他の静的ファイルに変更を行った後、GWTのコンパイル操作をしないと変更が反映されない場合があります。
