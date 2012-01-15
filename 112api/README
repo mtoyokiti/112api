@@ -53,7 +53,8 @@ JavaをベースにしているのでOSには依存しませんが、現在の�
 ・Eclipse Indigo（Eclipse 3.7）（http://eclipse.org/）
 ・Pleades Eclipse日本語化モジュール（http://mergedoc.sourceforge.jp/）
 ・Egit Eclipse用gitプラグイン（http://eclipse.org/egit/）
-※Windowsでgitを使用すつ為にはCygwinが必要になります（http://www.cygwin.com/）
+※Windowsでgitを使用する為にはCygwinが必要になります（http://www.cygwin.com/）
+　（Cygwinのダウンロード後、インストール時にgitを含めてインストールする必要があります）
 
 テスト動作時の注意
 ・Javaソースコードおよび他の静的ファイルに変更を行った後、GWTのコンパイル操作をしないと変更が反映されない場合があります。
@@ -65,13 +66,24 @@ JavaをベースにしているのでOSには依存しませんが、現在の�
 
 
 開発環境構築手順
+0.（Windowsの場合）Cygwinをダウンロード、インストールする
 1.JDK1.6をダウンロード、インストールして環境変数の設定を行う
+　（PATH、JAVA_HOME環境変数の設定）
 2.Eclipse Indigo（Eclipse 3.7）をダウンロードしてインストールする
 3.Pleadesをダウンロードしてインストールする
 4.Eclipse用各プラグインをダウンロード、インストールする
 　（これはEclipseの操作で行った方が楽です）
-5.Githubのリポジトリよりsrc及びwar配下をpullする
-
+　その場合、各種プラグイン（追加もじゅーつのダウンロード先は以下になります。
+　Egit：http://download.eclipse.org/releases/indigo
+　GAE：http://dl.google.com/eclipse/plugin/3.7
+　GWT：http://dl.google.com/eclipse/plugin/3.7
+5.Twitter4Jをダウンロードする
+6.Githubのリポジトリよりsrc及びwar配下をpullする
+　リポジトリからの112api一式を取得する。
+　https://github.com/mtoyokiti/112api.git
+7.追加ライブラリのTwitter4Jのjarを参照ライブラリに追加する
+　（CLASSPATHに追加する必要があります）
+後は、GWTコンパイル→Webアプリケーションの実行で動作させることができます。
 
 2011年10月2日
 復興いいね！APIプロジェクトメンバー一同
